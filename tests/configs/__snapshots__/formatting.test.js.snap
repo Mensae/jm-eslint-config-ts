@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`eslint-config-ts-formatting should match the snapshot 1`] = `
+{
+  "plugins": [
+    "@typescript-eslint",
+    "sort-class-members",
+  ],
+  "reportUnusedDisableDirectives": true,
+  "rules": {
+    "@typescript-eslint/block-spacing": "off",
+    "@typescript-eslint/brace-style": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/comma-spacing": "off",
+    "@typescript-eslint/func-call-spacing": "off",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/key-spacing": "off",
+    "@typescript-eslint/keyword-spacing": "off",
+    "@typescript-eslint/lines-around-comment": "off",
+    "@typescript-eslint/lines-between-class-members": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/member-ordering": "off",
+    "@typescript-eslint/method-signature-style": "off",
+    "@typescript-eslint/naming-convention": [
+      "off",
+      {
+        "format": [
+          "strictCamelCase",
+        ],
+        "selector": "default",
+      },
+      {
+        "format": [
+          "strictCamelCase",
+          "StrictPascalCase",
+        ],
+        "selector": "function",
+      },
+      {
+        "format": [
+          "StrictPascalCase",
+        ],
+        "selector": [
+          "typeLike",
+          "enumMember",
+        ],
+      },
+      {
+        "format": [
+          "PascalCase",
+        ],
+        "prefix": [
+          "is",
+          "has",
+          "are",
+          "can",
+          "should",
+          "did",
+          "will",
+        ],
+        "selector": [
+          "variable",
+          "parameter",
+          "property",
+          "accessor",
+        ],
+        "types": [
+          "boolean",
+        ],
+      },
+    ],
+    "@typescript-eslint/no-extra-parens": "off",
+    "@typescript-eslint/no-extra-semi": "off",
+    "@typescript-eslint/object-curly-spacing": "off",
+    "@typescript-eslint/padding-line-between-statements": "off",
+    "@typescript-eslint/quotes": "off",
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/sort-type-constituents": "off",
+    "@typescript-eslint/sort-type-union-intersection-members": "off",
+    "@typescript-eslint/space-before-blocks": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/space-infix-ops": "off",
+    "@typescript-eslint/type-annotation-spacing": "off",
+    "sort-class-members/sort-class-members": [
+      "error",
+      {
+        "accessorPairPositioning": "getThenSet",
+        "groups": {
+          "async-conventional-private-methods": [
+            {
+              "async": true,
+              "name": "/_.+/",
+              "type": "method",
+            },
+          ],
+          "static-accessor-pairs": [
+            {
+              "accessorPair": true,
+              "static": true,
+            },
+          ],
+          "static-arrow-function-properties": [
+            {
+              "propertyType": "ArrowFunctionExpression",
+              "static": true,
+            },
+          ],
+          "static-async-conventional-private-methods": [
+            {
+              "async": true,
+              "name": "/_.+/",
+              "static": true,
+              "type": "method",
+            },
+          ],
+          "static-async-methods": [
+            {
+              "async": true,
+              "static": true,
+              "type": "method",
+            },
+          ],
+          "static-conventional-private-methods": [
+            {
+              "name": "/_.+/",
+              "static": true,
+              "type": "method",
+            },
+          ],
+          "static-conventional-private-properties": [
+            {
+              "name": "/_.+/",
+              "static": true,
+              "type": "property",
+            },
+          ],
+          "static-getters": [
+            {
+              "kind": "get",
+              "static": true,
+            },
+          ],
+          "static-setters": [
+            {
+              "kind": "set",
+              "static": true,
+            },
+          ],
+        },
+        "order": [
+          "[static-properties]",
+          "[static-arrow-function-properties]",
+          "[static-accessor-pairs]",
+          "[static-getters]",
+          "[static-setters]",
+          "[static-methods]",
+          "[static-async-methods]",
+          "[properties]",
+          "[arrow-function-properties]",
+          "constructor",
+          "[accessor-pairs]",
+          "[getters]",
+          "[setters]",
+          "[methods]",
+          "[async-methods]",
+          "[static-conventional-private-properties]",
+          "[static-conventional-private-methods]",
+          "[static-async-conventional-private-methods]",
+          "[conventional-private-properties]",
+          "[conventional-private-methods]",
+          "[async-conventional-private-methods]",
+        ],
+      },
+    ],
+  },
+}
+`;
