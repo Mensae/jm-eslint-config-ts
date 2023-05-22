@@ -837,7 +837,7 @@ module.exports = Object.freeze({
          * Type:
          */
         '@typescript-eslint/prefer-readonly-parameter-types': [
-          ERROR,
+          OFF,
           { ignoreInferredTypes: true },
         ],
 
