@@ -30,7 +30,7 @@ module.exports = Object.freeze({
      * Require a consistent member declaration order.
      * https://typescript-eslint.io/rules/member-ordering
      */
-    '@typescript-eslint/member-ordering': OFF,
+    '@typescript-eslint/member-ordering': ERROR,
 
     /*
      * Enforce using a particular method signature syntax.
@@ -69,13 +69,13 @@ module.exports = Object.freeze({
      * alphabetically.
      * https://typescript-eslint.io/rules/sort-type-constituents
      */
-    '@typescript-eslint/sort-type-constituents': OFF,
+    '@typescript-eslint/sort-type-constituents': ERROR,
 
     /*
      * Enforce members of a type union/intersection to be sorted alphabetically.
      * https://typescript-eslint.io/rules/sort-type-union-intersection-members
      */
-    '@typescript-eslint/sort-type-union-intersection-members': OFF,
+    '@typescript-eslint/sort-type-union-intersection-members': ERROR,
 
     /*
      * Require consistent spacing around type annotations.
@@ -144,19 +144,40 @@ module.exports = Object.freeze({
      * Require empty lines around comments.
      * https://typescript-eslint.io/rules/lines-around-comment
      */
-    '@typescript-eslint/lines-around-comment': OFF,
+    'lines-around-comment': OFF,
+
+    /*
+     * Require empty lines around comments
+     * https://typescript-eslint.io/rules/lines-around-comment
+     * Type:
+     */
+    '@typescript-eslint/lines-around-comment': [
+      ERROR,
+      {
+        beforeBlockComment: true,
+        afterBlockComment: true,
+        beforeLineComment: true,
+        afterLineComment: true,
+        allowBlockStart: true,
+        allowBlockEnd: true,
+        allowObjectStart: true,
+        allowObjectEnd: true,
+        allowArrayStart: true,
+        allowArrayEnd: true,
+      },
+    ],
 
     /*
      * Require or disallow an empty line between class members.
      * https://typescript-eslint.io/rules/lines-between-class-members
      */
-    '@typescript-eslint/lines-between-class-members': OFF,
+    '@typescript-eslint/lines-between-class-members': ERROR,
 
     /*
      * Disallow unnecessary parentheses.
      * https://typescript-eslint.io/rules/no-extra-parens
      */
-    '@typescript-eslint/no-extra-parens': OFF,
+    '@typescript-eslint/no-extra-parens': ERROR,
 
     /*
      * Disallow unnecessary semicolons.
@@ -181,7 +202,11 @@ module.exports = Object.freeze({
      * Enforce the consistent use of either backticks, double, or single quotes.
      * https://typescript-eslint.io/rules/quotes
      */
-    '@typescript-eslint/quotes': OFF,
+    '@typescript-eslint/quotes': [
+      OFF,
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
 
     /*
      * Require or disallow semicolons instead of ASI.
