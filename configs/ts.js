@@ -19,12 +19,7 @@ module.exports = Object.freeze({
 
       extends: ['plugin:import/typescript', '@jm/eslint-config-ts-for-js'],
 
-      plugins: [
-        'import',
-        'eslint-plugin-no-explicit-type-exports',
-        'etc',
-        'total-functions',
-      ],
+      plugins: ['import', 'etc', 'total-functions'],
 
       rules: {
         // #region ESLint Core Rules
