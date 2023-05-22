@@ -1,6 +1,6 @@
 {
   "name": "@jm/eslint-config-ts",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "ESLint configuration linting TypeScript",
   "exports": {
     ".": "./configs/ts.js",

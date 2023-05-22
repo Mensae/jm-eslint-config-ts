@@ -19,8 +19,8 @@ exports[`eslint-config-ts-formatting should match the snapshot 1`] = `
     "@typescript-eslint/lines-around-comment": [
       "error",
       {
-        "afterBlockComment": true,
-        "afterLineComment": true,
+        "afterBlockComment": false,
+        "afterLineComment": false,
         "allowArrayEnd": true,
         "allowArrayStart": true,
         "allowBlockEnd": true,
