@@ -841,28 +841,6 @@ module.exports = Object.freeze({
           { ignoreInferredTypes: true },
         ],
 
-        'lines-around-comment': OFF,
-
-        /*
-         * Require empty lines around comments
-         * https://typescript-eslint.io/rules/lines-around-comment
-         * Type:
-         */
-        '@typescript-eslint/lines-around-comment': [
-          ERROR,
-          {
-            beforeBlockComment: true,
-            beforeLineComment: true,
-            allowBlockStart: true,
-            allowObjectStart: true,
-            allowArrayStart: true,
-            allowClassStart: true,
-
-            allowInterfaceStart: true,
-            allowTypeStart: true,
-          },
-        ],
-
         /*
          * Disallow magic numbers
          * https://typescript-eslint.io/rules/no-magic-numbers
@@ -921,17 +899,6 @@ module.exports = Object.freeze({
         '@typescript-eslint/no-use-before-define': [
           ERROR,
           { ignoreTypeReferences: false },
-        ],
-
-        /*
-         * Enforce the consistent use of either backticks, double, or single quotes
-         * https://typescript-eslint.io/rules/quotes
-         * Type:
-         */
-        '@typescript-eslint/quotes': [
-          ERROR,
-          'double',
-          { avoidEscape: true, allowTemplateLiterals: false },
         ],
 
         // #endregion @typescript-eslint/additional
