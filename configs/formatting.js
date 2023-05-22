@@ -177,7 +177,7 @@ module.exports = Object.freeze({
      * Disallow unnecessary parentheses.
      * https://typescript-eslint.io/rules/no-extra-parens
      */
-    '@typescript-eslint/no-extra-parens': ERROR,
+    '@typescript-eslint/no-extra-parens': OFF,
 
     /*
      * Disallow unnecessary semicolons.

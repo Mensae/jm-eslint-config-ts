@@ -83,7 +83,7 @@ exports[`eslint-config-ts-formatting should match the snapshot 1`] = `
         ],
       },
     ],
-    "@typescript-eslint/no-extra-parens": "error",
+    "@typescript-eslint/no-extra-parens": "off",
     "@typescript-eslint/no-extra-semi": "off",
     "@typescript-eslint/object-curly-spacing": "off",
     "@typescript-eslint/padding-line-between-statements": "off",
