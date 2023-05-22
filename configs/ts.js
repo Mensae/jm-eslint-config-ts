@@ -959,7 +959,6 @@ module.exports = Object.freeze({
 
         'total-functions/no-unsafe-readonly-mutable-assignment': ERROR,
         'total-functions/require-strict-mode': ERROR,
-        'total-functions/no-unsafe-enum-assignment': ERROR,
         'total-functions/no-partial-url-constructor': ERROR,
         'total-functions/no-partial-division': ERROR,
         'total-functions/no-partial-string-normalize': ERROR,
