@@ -13,6 +13,8 @@ rules that are conflicting with [prettier](https://prettier.io).
 
 - `ts`, The, default, base configuration that does not include any rules with regard to styling
 - `formatting`, Extention to the `ts` config that does include styling rules but only those that are not covered by [prettier](https://prettier.io).
+- `relaxed`, Base configuration with some relaxed rules. Better suitable for personal or small projects.
+- `formatting-relaxed`, Formatting configuration with some relaxed rules. Better suitable for personal or small projects.
 
 ## Installation
 
@@ -56,6 +58,19 @@ Or with formatting:
     "@jm/eslint-config-base/formatting",
     "@jm/ts",
     "@jm/eslint-config-ts/formatting"
+  ]
+}
+```
+
+With relaxed configuration:
+
+```json
+{
+  "extends": [
+    "@jm/eslint-config-base/relaxed",
+    "@jm/eslint-config-base/formatting-relaxed",
+    "@jm/eslint-config-ts/relaxed",
+    "@jm/eslint-config-ts/formatting-relaxed"
   ]
 }
 ```

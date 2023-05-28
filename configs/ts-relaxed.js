@@ -17,7 +17,10 @@ module.exports = Object.freeze({
     {
       files: ['*.ts', '*.tsx', '*.mts', '*.cts', '*.vue'],
 
-      extends: ['plugin:import/typescript', '@jm/eslint-config-ts-for-js'],
+      extends: [
+        'plugin:import/typescript',
+        '@jm/eslint-config-ts-for-js/relaxed',
+      ],
 
       plugins: ['import', 'etc', 'total-functions'],
 
@@ -225,7 +228,7 @@ module.exports = Object.freeze({
          * https://eslint.org/docs/rules/no-var
          * Type: suggestion
          */
-        'no-var': ERROR, // ts transpiles let/const to var, so no need for vars any more
+        'no-var': WARN, // ts transpiles let/const to var, so no need for vars any more
 
         /*
          * Require `const` declarations for variables that are never reassigned
@@ -246,7 +249,7 @@ module.exports = Object.freeze({
          * https://eslint.org/docs/rules/prefer-spread
          * Type: suggestion
          */
-        'prefer-spread': ERROR, // ts transpiles spread to apply, so no need for manual apply
+        'prefer-spread': OFF, // ts transpiles spread to apply, so no need for manual apply
 
         /*
          * Disallow async functions which have no `await` expression
@@ -942,7 +945,7 @@ module.exports = Object.freeze({
          * Type: suggestion
          * Category: Style guide
          */
-        'import/max-dependencies': [ERROR, { ignoreTypeImports: true }],
+        'import/max-dependencies': [WARN, { ignoreTypeImports: true }],
 
         // #endregion import
 
@@ -963,16 +966,17 @@ module.exports = Object.freeze({
          * Type: problem
          * Category: none
          */
-        'etc/no-commented-out-code': ERROR,
+        'etc/no-commented-out-code': OFF,
 
         /*
-         * Forbids the use of const enum. Constant enums are not compatible with isolated modules.
+         * Forbids the use of const enum. Constant enums are not compatible with
+         * isolated modules.
          * See: https://ncjamieson.com/dont-export-const-enums/
          * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-const-enum.md
          * Type: problem
          * Category: none
          */
-        'etc/no-const-enum': ERROR,
+        'etc/no-const-enum': WARN,
 
         /*
          * Forbids the use of deprecated APIs.
@@ -989,7 +993,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Category: none
          */
-        'etc/no-enum': ERROR,
+        'etc/no-enum': WARN,
 
         /*
          * Like the no-implicit-any-catch rule in @typescript-eslint/eslint-plugin,
@@ -1019,7 +1023,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Category: none
          */
-        'etc/no-misused-generics': ERROR,
+        'etc/no-misused-generics': WARN,
 
         /*
          * Forbids single-character type parameters.
@@ -1027,7 +1031,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Category: none
          */
-        'etc/no-t': ERROR,
+        'etc/no-t': OFF,
 
         /*
          * Forbids type aliases where interfaces can be used.
