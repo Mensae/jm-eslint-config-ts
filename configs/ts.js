@@ -834,7 +834,8 @@ module.exports = Object.freeze({
          * Require function parameters to be typed as `readonly` to prevent
          * accidental mutation of inputs.
          * https://typescript-eslint.io/rules/prefer-readonly-parameter-types
-         * Type:
+         * Type: suggestion
+         * Requires type checking
          */
         '@typescript-eslint/prefer-readonly-parameter-types': [
           OFF,
@@ -844,10 +845,10 @@ module.exports = Object.freeze({
         /*
          * Disallow magic numbers
          * https://typescript-eslint.io/rules/no-magic-numbers
-         * Type:
+         * Type: suggestion
          */
         '@typescript-eslint/no-magic-numbers': [
-          ERROR,
+          WARN,
           {
             ignore: [0, 1],
             enforceConst: true,
@@ -864,10 +865,10 @@ module.exports = Object.freeze({
          * Disallow variable declarations from shadowing variables declared in
          * the outer scope.
          * https://typescript-eslint.io/rules/no-shadow
-         * Type:
+         * Type: suggestion
          */
         '@typescript-eslint/no-shadow': [
-          ERROR,
+          WARN,
           {
             builtinGlobals: true,
             allow: [
@@ -884,17 +885,17 @@ module.exports = Object.freeze({
         /*
          * Disallow unused expressions
          * https://typescript-eslint.io/rules/no-unused-expressions
-         * Type:
+         * Type: suggestion
          */
         '@typescript-eslint/no-unused-expressions': [
-          ERROR,
+          WARN,
           { enforceForJSX: true },
         ],
 
         /*
          * Disallow the use of variables before they are defined
          * https://typescript-eslint.io/rules/no-use-before-define
-         * Type:
+         * Type: problem
          */
         '@typescript-eslint/no-use-before-define': [
           ERROR,
@@ -903,35 +904,154 @@ module.exports = Object.freeze({
 
         // #endregion @typescript-eslint/additional
 
-        '@shopify/typescript/prefer-singular-enums': ERROR,
+        // #region @shopify/typescript
 
+        /*
+         * Prefer singular TypeScript enums.
+         * https://github.com/Shopify/web-configs/blob/main/packages/eslint-plugin/docs/rules/typescript/prefer-singular-enums.md
+         * Category: Stylistic Issues
+         */
+        '@shopify/typescript/prefer-singular-enums': WARN,
+
+        // #endregion @shopify/typescript
+
+        // #region import
+
+        /*
+         * Ensure consistent use of file extension within the import path.
+         * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
+         * Type: suggestion
+         * Category: Style guide
+         */
         'import/extensions': [ERROR, 'never'],
+
+        /*
+         * Forbid modules without exports, or exports without matching import in another module.
+         * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unused-modules.md
+         * Type: suggestion
+         * Category: Helpful warnings
+         */
         'import/no-unused-modules': [
-          ERROR,
+          WARN,
           { missingExports: false, unusedExports: true },
         ],
+
+        /*
+         * Enforce the maximum number of dependencies a module can have.
+         * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/max-dependencies.md
+         * Type: suggestion
+         * Category: Style guide
+         */
         'import/max-dependencies': [ERROR, { ignoreTypeImports: true }],
 
+        // #endregion import
+
+        // #region etc
+
+        /*
+         * Forbids the assignment of returned, mutated arrays.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-assign-mutated-array.md
+         * Type: problem
+         * Category: none
+         * Recommended: Yes
+         */
         'etc/no-assign-mutated-array': ERROR,
+
+        /*
+         * Forbids commented-out code.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-commented-out-code.md
+         * Type: problem
+         * Category: none
+         */
         'etc/no-commented-out-code': ERROR,
+
+        /*
+         * Forbids the use of const enum. Constant enums are not compatible with isolated modules.
+         * See: https://ncjamieson.com/dont-export-const-enums/
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-const-enum.md
+         * Type: problem
+         * Category: none
+         */
         'etc/no-const-enum': ERROR,
+
+        /*
+         * Forbids the use of deprecated APIs.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-deprecated.md
+         * Type: problem
+         * Category: none
+         * Recommended: Yes
+         */
         'etc/no-deprecated': ERROR,
+
+        /*
+         * Forbids the use of enum.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-enum.md
+         * Type: problem
+         * Category: none
+         */
         'etc/no-enum': ERROR,
+
+        /*
+         * Like the no-implicit-any-catch rule in @typescript-eslint/eslint-plugin,
+         * but for Promise rejections instead of catch clauses.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-implicit-any-catch.md
+         * Type: problem
+         * Category: none
+         * Recommended: Yes
+         */
         'etc/no-implicit-any-catch': ERROR,
+
+        /*
+         * Forbids the use of internal APIs.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-internal.md
+         * Type: problem
+         * Category: none
+         * Recommended: Yes
+         */
         'etc/no-internal': ERROR,
+
+        /*
+         * Forbids type parameters without inference sites and type parameters
+         * that don't add type safety to declarations.
+         * This is an ESLint port of Wotan's no-misused-generics rule.
+         * See: https://effectivetypescript.com/2020/08/12/generics-golden-rule/.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-misused-generics.md
+         * Type: problem
+         * Category: none
+         */
         'etc/no-misused-generics': ERROR,
+
+        /*
+         * Forbids single-character type parameters.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-t.md
+         * Type: problem
+         * Category: none
+         */
         'etc/no-t': ERROR,
 
-        'etc/prefer-interface': [ERROR, { allowIntersection: false }],
+        /*
+         * Forbids type aliases where interfaces can be used.
+         * https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/prefer-interface.md
+         * Type: suggestion
+         * Category: none
+         */
+        'etc/prefer-interface': [WARN, { allowIntersection: false }],
 
+        // #endregion etc
+
+        // #region total-functions
+
+        'total-functions/no-unsafe-type-assertion': ERROR,
         'total-functions/no-unsafe-readonly-mutable-assignment': ERROR,
         'total-functions/require-strict-mode': ERROR,
+        'total-functions/no-enums': ERROR,
         'total-functions/no-partial-url-constructor': ERROR,
         'total-functions/no-partial-division': ERROR,
         'total-functions/no-partial-string-normalize': ERROR,
         'total-functions/no-premature-fp-ts-effects': ERROR,
         'total-functions/no-partial-array-reduce': ERROR,
-        'total-functions/no-nested-fp-ts-effects': ERROR,
+
+        // #endregion total-functions
       },
 
       settings: {
@@ -979,7 +1099,7 @@ module.exports = Object.freeze({
          * Type:
          */
         '@typescript-eslint/no-shadow': [
-          ERROR,
+          WARN,
           {
             builtinGlobals: true,
             allow: [
