@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`eslint-config-ts should match the snapshot 1`] = `
+exports[`eslint-config-ts-relaxed should match the snapshot 1`] = `
 {
   "ignorePatterns": [
     "*.d.ts",
@@ -9,7 +9,7 @@ exports[`eslint-config-ts should match the snapshot 1`] = `
     {
       "extends": [
         "plugin:import/typescript",
-        "@jm/eslint-config-ts-for-js",
+        "@jm/eslint-config-ts-for-js/relaxed",
       ],
       "files": [
         "*.ts",
@@ -187,14 +187,14 @@ exports[`eslint-config-ts should match the snapshot 1`] = `
         "constructor-super": "off",
         "dot-notation": "off",
         "etc/no-assign-mutated-array": "error",
-        "etc/no-commented-out-code": "error",
-        "etc/no-const-enum": "error",
+        "etc/no-commented-out-code": "off",
+        "etc/no-const-enum": "warn",
         "etc/no-deprecated": "error",
-        "etc/no-enum": "error",
+        "etc/no-enum": "warn",
         "etc/no-implicit-any-catch": "error",
         "etc/no-internal": "error",
-        "etc/no-misused-generics": "error",
-        "etc/no-t": "error",
+        "etc/no-misused-generics": "warn",
+        "etc/no-t": "off",
         "etc/prefer-interface": [
           "warn",
           {
@@ -207,7 +207,7 @@ exports[`eslint-config-ts should match the snapshot 1`] = `
           "never",
         ],
         "import/max-dependencies": [
-          "error",
+          "warn",
           {
             "ignoreTypeImports": true,
           },
@@ -241,10 +241,10 @@ exports[`eslint-config-ts should match the snapshot 1`] = `
         "no-unsafe-negation": "off",
         "no-unused-vars": "off",
         "no-useless-constructor": "off",
-        "no-var": "error",
+        "no-var": "warn",
         "prefer-const": "error",
         "prefer-rest-params": "error",
-        "prefer-spread": "error",
+        "prefer-spread": "off",
         "require-await": "off",
         "total-functions/no-enums": "error",
         "total-functions/no-partial-array-reduce": "error",
