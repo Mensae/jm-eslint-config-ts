@@ -30,14 +30,14 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'constructor-super': 'off', // ts(2335) & ts(2377)
+        'constructor-super': OFF, // ts(2335) & ts(2377)
 
         /*
          * encourages use of dot notation whenever possible
          * https://eslint.org/docs/rules/dot-notation
          * Type: suggestion
          */
-        'dot-notation': 'off',
+        'dot-notation': OFF,
 
         /*
          * Enforces that a return statement is present in property getters
@@ -45,14 +45,14 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'getter-return': 'off', // ts(2378)
+        'getter-return': OFF, // ts(2378)
 
         /*
          * Disallow `Array` constructors
          * https://eslint.org/docs/rules/no-array-constructor
          * Type: suggestion
          */
-        'no-array-constructor': 'off',
+        'no-array-constructor': OFF,
 
         /*
          * Disallow modifying variables that are declared using `const`
@@ -60,7 +60,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-const-assign': 'off', // ts(2588)
+        'no-const-assign': OFF, // ts(2588)
 
         /*
          * Disallow duplicate arguments in functions
@@ -68,7 +68,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-dupe-args': 'off', // ts(2300)
+        'no-dupe-args': OFF, // ts(2300)
 
         /*
          * Disallow duplicate class members
@@ -76,7 +76,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-dupe-class-members': 'off', // ts(2393) & ts(2300)
+        'no-dupe-class-members': OFF, // ts(2393) & ts(2300)
 
         /*
          * Disallow duplicate keys when creating object literals
@@ -84,14 +84,14 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-dupe-keys': 'off', // ts(1117)
+        'no-dupe-keys': OFF, // ts(1117)
 
         /*
          * Disallow empty functions
          * https://eslint.org/docs/rules/no-empty-function
          * Type: suggestion
          */
-        'no-empty-function': 'off',
+        'no-empty-function': OFF,
 
         /*
          * Disallow unnecessary semicolons
@@ -99,7 +99,7 @@ module.exports = Object.freeze({
          * Type: suggestion
          * Recommended: Yes
          */
-        'no-extra-semi': 'off',
+        'no-extra-semi': OFF,
 
         /*
          * Disallow overwriting functions written as function declarations
@@ -107,14 +107,14 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-func-assign': 'off', // ts(2539)
+        'no-func-assign': OFF, // ts(2539)
 
         /*
          * Disallow use of `eval()`-like methods
          * https://eslint.org/docs/rules/no-implied-eval
          * Type: suggestion
          */
-        'no-implied-eval': 'off',
+        'no-implied-eval': OFF,
 
         /*
          * Disallow assigning to imported bindings
@@ -122,7 +122,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-import-assign': 'off', // ts(2539) & ts(2540)
+        'no-import-assign': OFF, // ts(2539) & ts(2540)
 
         /*
          * Disallow number literals that lose precision
@@ -130,7 +130,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-loss-of-precision': 'off',
+        'no-loss-of-precision': OFF,
 
         /*
          * Disallow symbol constructor
@@ -138,7 +138,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-new-symbol': 'off', // ts(7009)
+        'no-new-symbol': OFF, // ts(7009)
 
         /*
          * Disallow the use of object properties of the global object
@@ -147,7 +147,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-obj-calls': 'off', // ts(2349)
+        'no-obj-calls': OFF, // ts(2349)
 
         /*
          * Disallow declaring the same variable more than once
@@ -155,7 +155,7 @@ module.exports = Object.freeze({
          * Type: suggestion
          * Recommended: Yes
          */
-        'no-redeclare': 'off', // ts(2451)
+        'no-redeclare': OFF, // ts(2451)
 
         /*
          * Disallow returning values from setters
@@ -163,7 +163,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-setter-return': 'off', // ts(2408)
+        'no-setter-return': OFF, // ts(2408)
 
         /*
          * Disallow to use `this`/`super` before `super()` calling in constructors.
@@ -171,14 +171,14 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-this-before-super': 'off', // ts(2376)
+        'no-this-before-super': OFF, // ts(2376)
 
         /*
          * Restrict what can be thrown as an exception
          * https://eslint.org/docs/rules/no-throw-literal
          * Type: suggestion
          */
-        'no-throw-literal': 'off',
+        'no-throw-literal': OFF,
 
         /*
          * Disallow the use of undeclared variables unless mentioned in `global`
@@ -187,7 +187,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-undef': 'off', // ts(2304)
+        'no-undef': OFF, // ts(2304)
 
         /*
          * Disallow unreachable statements after a return, throw, continue, or break statement
@@ -195,7 +195,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-unreachable': 'off', // ts(7027)
+        'no-unreachable': OFF, // ts(7027)
 
         /*
          * Disallow negating the left operand of relational operators
@@ -203,14 +203,14 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-unsafe-negation': 'off', // ts(2365) & ts(2360) & ts(2358)
+        'no-unsafe-negation': OFF, // ts(2365) & ts(2360) & ts(2358)
 
         /*
          * Disallow unnecessary constructor
          * https://eslint.org/docs/rules/no-useless-constructor
          * Type: suggestion
          */
-        'no-useless-constructor': 'off',
+        'no-useless-constructor': OFF,
 
         /*
          * Disallow declaration of variables that are not used in the code
@@ -218,42 +218,42 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'no-unused-vars': 'off',
+        'no-unused-vars': OFF,
 
         /*
          * Require `let` or `const` instead of `var`
          * https://eslint.org/docs/rules/no-var
          * Type: suggestion
          */
-        'no-var': 'error', // ts transpiles let/const to var, so no need for vars any more
+        'no-var': ERROR, // ts transpiles let/const to var, so no need for vars any more
 
         /*
          * Require `const` declarations for variables that are never reassigned
          * after declared.
          * https://eslint.org/docs/rules/prefer-const
          */
-        'prefer-const': 'error', // ts provides better types with const
+        'prefer-const': ERROR, // ts provides better types with const
 
         /*
          * Require rest parameters instead of `arguments`
          * https://eslint.org/docs/rules/prefer-rest-params
          * Type: suggestion
          */
-        'prefer-rest-params': 'error', // ts provides better types with rest args over arguments
+        'prefer-rest-params': ERROR, // ts provides better types with rest args over arguments
 
         /*
          * Require spread operators instead of `.apply()`
          * https://eslint.org/docs/rules/prefer-spread
          * Type: suggestion
          */
-        'prefer-spread': 'error', // ts transpiles spread to apply, so no need for manual apply
+        'prefer-spread': ERROR, // ts transpiles spread to apply, so no need for manual apply
 
         /*
          * Disallow async functions which have no `await` expression
          * https://eslint.org/docs/rules/require-await
          * Type: suggestion
          */
-        'require-await': 'off',
+        'require-await': OFF,
 
         /*
          * Enforce comparing `typeof` expressions against valid strings
@@ -261,7 +261,7 @@ module.exports = Object.freeze({
          * Type: problem
          * Recommended: Yes
          */
-        'valid-typeof': 'off', // ts(2367)
+        'valid-typeof': OFF, // ts(2367)
 
         // #endregion ESLint Core Rules
 
@@ -272,7 +272,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/adjacent-overload-signatures
          * Recommended
          */
-        '@typescript-eslint/adjacent-overload-signatures': 'error',
+        '@typescript-eslint/adjacent-overload-signatures': ERROR,
 
         /*
          * Disallow `@ts-<directive>` comments or require descriptions after
@@ -280,56 +280,56 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/ban-ts-comment
          * Recommended
          */
-        '@typescript-eslint/ban-ts-comment': 'error',
+        '@typescript-eslint/ban-ts-comment': ERROR,
 
         /*
          * Disallow certain types.
          * https://typescript-eslint.io/rules/ban-types
          * Recommended
          */
-        '@typescript-eslint/ban-types': 'error',
+        '@typescript-eslint/ban-types': ERROR,
 
         /*
          * Disallow generic `Array` constructors.
          * https://typescript-eslint.io/rules/no-array-constructor
          * Recommended
          */
-        '@typescript-eslint/no-array-constructor': 'error',
+        '@typescript-eslint/no-array-constructor': ERROR,
 
         /*
          * Disallow empty functions.
          * https://typescript-eslint.io/rules/no-empty-function
          * Recommended
          */
-        '@typescript-eslint/no-empty-function': 'error',
+        '@typescript-eslint/no-empty-function': ERROR,
 
         /*
          * Disallow the declaration of empty interfaces.
          * https://typescript-eslint.io/rules/no-empty-interface
          * Recommended
          */
-        '@typescript-eslint/no-empty-interface': 'error',
+        '@typescript-eslint/no-empty-interface': ERROR,
 
         /*
          * Disallow the `any` type.
          * https://typescript-eslint.io/rules/no-explicit-any
          * Recommended
          */
-        '@typescript-eslint/no-explicit-any': 'warn',
+        '@typescript-eslint/no-explicit-any': WARN,
 
         /*
          * Disallow extra non-null assertions.
          * https://typescript-eslint.io/rules/no-extra-non-null-assertion
          * Recommended
          */
-        '@typescript-eslint/no-extra-non-null-assertion': 'error',
+        '@typescript-eslint/no-extra-non-null-assertion': ERROR,
 
         /*
          * Disallow unnecessary semicolons.
          * https://typescript-eslint.io/rules/no-extra-semi
          * Recommended
          */
-        '@typescript-eslint/no-extra-semi': 'error',
+        '@typescript-eslint/no-extra-semi': ERROR,
 
         /*
          * Disallow explicit type declarations for variables or parameters
@@ -337,56 +337,56 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/no-inferrable-types
          * Recommended
          */
-        '@typescript-eslint/no-inferrable-types': 'error',
+        '@typescript-eslint/no-inferrable-types': ERROR,
 
         /*
          * Disallow literal numbers that lose precision.
          * https://typescript-eslint.io/rules/no-loss-of-precision
          * Recommended
          */
-        '@typescript-eslint/no-loss-of-precision': 'error',
+        '@typescript-eslint/no-loss-of-precision': ERROR,
 
         /*
          * Enforce valid definition of `new` and `constructor`.
          * https://typescript-eslint.io/rules/no-misused-new
          * Recommended
          */
-        '@typescript-eslint/no-misused-new': 'error',
+        '@typescript-eslint/no-misused-new': ERROR,
 
         /*
          * Disallow TypeScript namespaces.
          * https://typescript-eslint.io/rules/no-namespace
          * Recommended
          */
-        '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-namespace': ERROR,
 
         /*
          * Disallow non-null assertions after an optional chain expression.
          * https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain
          * Recommended
          */
-        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+        '@typescript-eslint/no-non-null-asserted-optional-chain': ERROR,
 
         /*
          * Disallow non-null assertions using the `!` postfix operator.
          * https://typescript-eslint.io/rules/no-non-null-assertion
          * Recommended
          */
-        '@typescript-eslint/no-non-null-assertion': 'warn',
+        '@typescript-eslint/no-non-null-assertion': WARN,
 
         /*
          * Disallow aliasing `this`.
          * https://typescript-eslint.io/rules/no-this-alias
          * Recommended
          */
-        '@typescript-eslint/no-this-alias': 'error',
+        '@typescript-eslint/no-this-alias': ERROR,
 
         /*
          * Disallow unnecessary constraints on generic types.
          * https://typescript-eslint.io/rules/no-unnecessary-type-constraint
          * Recommended
          */
-        '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+        '@typescript-eslint/no-unnecessary-type-constraint': ERROR,
 
         /*
          * Disallow unused variables.
@@ -409,14 +409,14 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/no-var-requires
          * Recommended
          */
-        '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/no-var-requires': ERROR,
 
         /*
          * Enforce the use of `as const` over literal type.
          * https://typescript-eslint.io/rules/prefer-as-const
          * Recommended
          */
-        '@typescript-eslint/prefer-as-const': 'error',
+        '@typescript-eslint/prefer-as-const': ERROR,
 
         /*
          * Require using `namespace` keyword over `module` keyword to declare custom
@@ -424,7 +424,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/prefer-namespace-keyword
          * Recommended
          */
-        '@typescript-eslint/prefer-namespace-keyword': 'error',
+        '@typescript-eslint/prefer-namespace-keyword': ERROR,
 
         /*
          * Disallow certain triple slash directives in favor of ES6-style import
@@ -432,7 +432,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/triple-slash-reference
          * Recommended
          */
-        '@typescript-eslint/triple-slash-reference': 'error',
+        '@typescript-eslint/triple-slash-reference': ERROR,
 
         // #endregion @typescript-eslint/recommended
 
@@ -443,84 +443,84 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/await-thenable
          * Recommended
          */
-        '@typescript-eslint/await-thenable': 'error',
+        '@typescript-eslint/await-thenable': ERROR,
 
         /*
          * Require Promise-like statements to be handled appropriately.
          * https://typescript-eslint.io/rules/no-floating-promises
          * Recommended
          */
-        '@typescript-eslint/no-floating-promises': 'error',
+        '@typescript-eslint/no-floating-promises': ERROR,
 
         /*
          * Disallow iterating over an array with a for-in loop.
          * https://typescript-eslint.io/rules/no-for-in-array
          * Recommended
          */
-        '@typescript-eslint/no-for-in-array': 'error',
+        '@typescript-eslint/no-for-in-array': ERROR,
 
         /*
          * Disallow the use of `eval()`-like methods.
          * https://typescript-eslint.io/rules/no-implied-eval
          * Recommended
          */
-        '@typescript-eslint/no-implied-eval': 'error',
+        '@typescript-eslint/no-implied-eval': ERROR,
 
         /*
          * Disallow Promises in places not designed to handle them.
          * https://typescript-eslint.io/rules/no-misused-promises
          * Recommended
          */
-        '@typescript-eslint/no-misused-promises': 'error',
+        '@typescript-eslint/no-misused-promises': ERROR,
 
         /*
          * Disallow type assertions that do not change the type of an expression.
          * https://typescript-eslint.io/rules/no-unnecessary-type-assertion
          * Recommended
          */
-        '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/no-unnecessary-type-assertion': ERROR,
 
         /*
          * Disallow calling a function with a value with type `any`.
          * https://typescript-eslint.io/rules/no-unsafe-argument
          * Recommended
          */
-        '@typescript-eslint/no-unsafe-argument': 'error',
+        '@typescript-eslint/no-unsafe-argument': ERROR,
 
         /*
          * Disallow assigning a value with type `any` to variables and properties.
          * https://typescript-eslint.io/rules/no-unsafe-assignment
          * Recommended
          */
-        '@typescript-eslint/no-unsafe-assignment': 'error',
+        '@typescript-eslint/no-unsafe-assignment': ERROR,
 
         /*
          * Disallow calling a value with type `any`.
          * https://typescript-eslint.io/rules/no-unsafe-call
          * Recommended
          */
-        '@typescript-eslint/no-unsafe-call': 'error',
+        '@typescript-eslint/no-unsafe-call': ERROR,
 
         /*
          * Disallow member access on a value with type `any`.
          * https://typescript-eslint.io/rules/no-unsafe-member-access
          * Recommended
          */
-        '@typescript-eslint/no-unsafe-member-access': 'error',
+        '@typescript-eslint/no-unsafe-member-access': ERROR,
 
         /*
          * Disallow returning a value with type `any` from a function.
          * https://typescript-eslint.io/rules/no-unsafe-return
          * Recommended
          */
-        '@typescript-eslint/no-unsafe-return': 'error',
+        '@typescript-eslint/no-unsafe-return': ERROR,
 
         /*
          * Disallow async functions which have no `await` expression.
          * https://typescript-eslint.io/rules/require-await
          * Recommended
          */
-        '@typescript-eslint/require-await': 'error',
+        '@typescript-eslint/require-await': ERROR,
 
         /*
          * Require both operands of addition to be the same type and be `bigint`,
@@ -538,14 +538,14 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/restrict-template-expressions
          * Recommended
          */
-        '@typescript-eslint/restrict-template-expressions': 'error',
+        '@typescript-eslint/restrict-template-expressions': ERROR,
 
         /*
          * Enforce unbound methods are called with their expected scope.
          * https://typescript-eslint.io/rules/unbound-method
          * Recommended
          */
-        '@typescript-eslint/unbound-method': 'error',
+        '@typescript-eslint/unbound-method': ERROR,
 
         // #endregion @typescript-eslint/recommended-requiring-type-checking
 
@@ -556,21 +556,21 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/array-type
          * Strict
          */
-        '@typescript-eslint/array-type': 'warn',
+        '@typescript-eslint/array-type': WARN,
 
         /*
          * Disallow `// tslint:<rule-flag>` comments.
          * https://typescript-eslint.io/rules/ban-tslint-comment
          * Strict
          */
-        '@typescript-eslint/ban-tslint-comment': 'warn',
+        '@typescript-eslint/ban-tslint-comment': WARN,
 
         /*
          * Enforce that literals on classes are exposed in a consistent style.
          * https://typescript-eslint.io/rules/class-literal-property-style
          * Strict
          */
-        '@typescript-eslint/class-literal-property-style': 'warn',
+        '@typescript-eslint/class-literal-property-style': WARN,
 
         /*
          * Enforce specifying generic type arguments on type annotation or
@@ -578,7 +578,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/consistent-generic-constructors
          * Strict
          */
-        '@typescript-eslint/consistent-generic-constructors': 'warn',
+        '@typescript-eslint/consistent-generic-constructors': WARN,
 
         /*
          * Require or disallow the `Record` type.
@@ -605,14 +605,14 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/consistent-type-definitions
          * Strict
          */
-        '@typescript-eslint/consistent-type-definitions': 'warn',
+        '@typescript-eslint/consistent-type-definitions': WARN,
 
         /*
          * Enforce dot notation whenever possible.
          * https://typescript-eslint.io/rules/dot-notation
          * Strict
          */
-        '@typescript-eslint/dot-notation': 'warn',
+        '@typescript-eslint/dot-notation': WARN,
 
         /*
          * Require `.toString()` to only be called on objects which provide useful
@@ -620,42 +620,42 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/no-base-to-string
          * Strict
          */
-        '@typescript-eslint/no-base-to-string': 'warn',
+        '@typescript-eslint/no-base-to-string': WARN,
 
         /*
          * Disallow non-null assertion in locations that may be confusing.
          * https://typescript-eslint.io/rules/no-confusing-non-null-assertion
          * Strict
          */
-        '@typescript-eslint/no-confusing-non-null-assertion': 'warn',
+        '@typescript-eslint/no-confusing-non-null-assertion': WARN,
 
         /*
          * Disallow duplicate enum member values.
          * https://typescript-eslint.io/rules/no-duplicate-enum-values
          * Strict
          */
-        '@typescript-eslint/no-duplicate-enum-values': 'warn',
+        '@typescript-eslint/no-duplicate-enum-values': WARN,
 
         /*
          * Disallow using the `delete` operator on computed key expressions.
          * https://typescript-eslint.io/rules/no-dynamic-delete
          * Strict
          */
-        '@typescript-eslint/no-dynamic-delete': 'warn',
+        '@typescript-eslint/no-dynamic-delete': WARN,
 
         /*
          * Disallow classes used as namespaces.
          * https://typescript-eslint.io/rules/no-extraneous-class
          * Strict
          */
-        '@typescript-eslint/no-extraneous-class': 'warn',
+        '@typescript-eslint/no-extraneous-class': WARN,
 
         /*
          * Disallow `void` type outside of generic or return types.
          * https://typescript-eslint.io/rules/no-invalid-void-type
          * Strict
          */
-        '@typescript-eslint/no-invalid-void-type': 'warn',
+        '@typescript-eslint/no-invalid-void-type': WARN,
 
         /*
          * Disallow the `void` operator except when used to discard a value.
@@ -672,7 +672,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/no-mixed-enums
          * Strict
          */
-        '@typescript-eslint/no-mixed-enums': 'warn',
+        '@typescript-eslint/no-mixed-enums': WARN,
 
         /*
          * Disallow non-null assertions in the left operand of a nullish coalescing
@@ -680,7 +680,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing
          * Strict
          */
-        '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'warn',
+        '@typescript-eslint/no-non-null-asserted-nullish-coalescing': WARN,
 
         /*
          * Disallow throwing literals as exceptions.
@@ -697,49 +697,49 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
          * Strict
          */
-        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': WARN,
 
         /*
          * Disallow conditionals where the type is always truthy or always falsy.
          * https://typescript-eslint.io/rules/no-unnecessary-condition
          * Strict
          */
-        '@typescript-eslint/no-unnecessary-condition': 'warn',
+        '@typescript-eslint/no-unnecessary-condition': WARN,
 
         /*
          * Disallow type arguments that are equal to the default.
          * https://typescript-eslint.io/rules/no-unnecessary-type-arguments
          * Strict
          */
-        '@typescript-eslint/no-unnecessary-type-arguments': 'warn',
+        '@typescript-eslint/no-unnecessary-type-arguments': WARN,
 
         /*
          * Disallow unnecessary constructors.
          * https://typescript-eslint.io/rules/no-useless-constructor
          * Strict
          */
-        '@typescript-eslint/no-useless-constructor': 'warn',
+        '@typescript-eslint/no-useless-constructor': WARN,
 
         /*
          * Disallow unsafe declaration merging.
          * https://typescript-eslint.io/rules/no-unsafe-declaration-merging
          * Strict
          */
-        '@typescript-eslint/no-unsafe-declaration-merging': 'warn',
+        '@typescript-eslint/no-unsafe-declaration-merging': WARN,
 
         /*
          * Disallow comparing an enum value with a non-enum value.
          * https://typescript-eslint.io/rules/no-unsafe-enum-comparison
          * Strict
          */
-        '@typescript-eslint/no-unsafe-enum-comparison': 'warn',
+        '@typescript-eslint/no-unsafe-enum-comparison': WARN,
 
         /*
          * Enforce non-null assertions over explicit type casts.
          * https://typescript-eslint.io/rules/non-nullable-type-assertion-style
          * Strict
          */
-        '@typescript-eslint/non-nullable-type-assertion-style': 'warn',
+        '@typescript-eslint/non-nullable-type-assertion-style': WARN,
 
         /*
          * Enforce the use of `for-of` loop over the standard `for` loop where
@@ -747,28 +747,28 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/prefer-for-of
          * Strict
          */
-        '@typescript-eslint/prefer-for-of': 'warn',
+        '@typescript-eslint/prefer-for-of': WARN,
 
         /*
          * Enforce using function types instead of interfaces with call signatures.
          * https://typescript-eslint.io/rules/prefer-function-type
          * Strict
          */
-        '@typescript-eslint/prefer-function-type': 'warn',
+        '@typescript-eslint/prefer-function-type': WARN,
 
         /*
          * Enforce `includes` method over `indexOf` method.
          * https://typescript-eslint.io/rules/prefer-includes
          * Strict
          */
-        '@typescript-eslint/prefer-includes': 'warn',
+        '@typescript-eslint/prefer-includes': WARN,
 
         /*
          * Require all enum members to be literal values.
          * https://typescript-eslint.io/rules/prefer-literal-enum-member
          * Strict
          */
-        '@typescript-eslint/prefer-literal-enum-member': 'warn',
+        '@typescript-eslint/prefer-literal-enum-member': WARN,
 
         /*
          * Enforce using the nullish coalescing operator instead of logical chaining.
@@ -786,7 +786,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/prefer-optional-chain
          * Strict
          */
-        '@typescript-eslint/prefer-optional-chain': 'warn',
+        '@typescript-eslint/prefer-optional-chain': WARN,
 
         /*
          * Enforce using type parameter when calling `Array#reduce` instead of
@@ -794,14 +794,14 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/prefer-reduce-type-parameter
          * Strict
          */
-        '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
+        '@typescript-eslint/prefer-reduce-type-parameter': WARN,
 
         /*
          * Enforce that `this` is used when only `this` type is returned.
          * https://typescript-eslint.io/rules/prefer-return-this-type
          * Strict
          */
-        '@typescript-eslint/prefer-return-this-type': 'warn',
+        '@typescript-eslint/prefer-return-this-type': WARN,
 
         /*
          * Enforce using `String#startsWith` and `String#endsWith` over other
@@ -809,14 +809,14 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/prefer-string-starts-ends-with
          * Strict
          */
-        '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
+        '@typescript-eslint/prefer-string-starts-ends-with': WARN,
 
         /*
          * Enforce using `@ts-expect-error` over `@ts-ignore`.
          * https://typescript-eslint.io/rules/prefer-ts-expect-error
          * Strict
          */
-        '@typescript-eslint/prefer-ts-expect-error': 'warn',
+        '@typescript-eslint/prefer-ts-expect-error': WARN,
 
         /*
          * Disallow two overloads that could be unified into one with a union or an
@@ -824,7 +824,7 @@ module.exports = Object.freeze({
          * https://typescript-eslint.io/rules/unified-signatures
          * Strict
          */
-        '@typescript-eslint/unified-signatures': 'warn',
+        '@typescript-eslint/unified-signatures': WARN,
 
         // #endregion @typescript-eslint/strict
 
